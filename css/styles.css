@@ -346,3 +346,6 @@ h3 { font-size: var(--font-size-xl); }
     font-size: var(--font-size-sm);
 }
 
+.projetos-destaque{
+    h2{margin-left: 400px;}
+}
