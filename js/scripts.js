@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (el) el.textContent = year;
     });
 
-    // Máscaras para formulário de cadastro
+    
     const applyMasks = () => {
         const cpf = document.getElementById('cpf');
         if (cpf) {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyMasks();
 
-    // Menu hambúrguer para mobile
+    
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.getElementById('main-nav');
     if (menuToggle && nav) {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Funcionalidades do modal de doação
+    
     const openModal = () => {
         const modal = document.getElementById('donationModal');
         if (modal) {
@@ -82,14 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Adicionar eventos aos botões de doação
+    
     document.querySelectorAll('.btn-doar').forEach(button => {
         button.addEventListener('click', () => {
             openModal();
         });
     });
 
-    // Simulação de envio de formulários com validação visual
+    
     document.querySelectorAll('form').forEach(form => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Expor funções globais para o modal
+    
     window.openModal = openModal;
     window.closeModal = closeModal;
     window.copyPix = copyPix;
