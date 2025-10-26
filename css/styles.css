@@ -13,6 +13,7 @@
     --text: #ffffff;
     --error: #ef4444;
     --success: #22c55e;
+    
 
     /* Tipografia Hierárquica (mínimo 5 tamanhos) */
     --font-size-xs: 0.75rem; /* 12px */
@@ -344,3 +345,4 @@ h3 { font-size: var(--font-size-xl); }
     color: var(--neutral);
     font-size: var(--font-size-sm);
 }
+
