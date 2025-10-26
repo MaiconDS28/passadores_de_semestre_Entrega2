@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Plataforma para ONGs — missão, projetos, voluntariado e doações.">
+    <meta name="keywords" content="ONG, causas sociais, voluntariado, doações, educação">
+    <title>Passadores de Semestres — Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="theme-dark">
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Passadores de Semestres — voltar à home">Passadores de Semestres</a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+            <nav id="main-nav" aria-label="Navegação principal" class="nav-hidden">
+                <ul class="main-nav">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li class="has-submenu">
+                        <a href="projetos.html">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="#missao">Missão</a></li>
+                            <li><a href="#equipe">Equipe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="capitacao.html">Captação</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="container" role="main">
+        <section class="hero" aria-labelledby="sobre-title">
+            <h1 id="sobre-title">Passadores de Semestres</h1>
+            <p class="lead">Fortalecendo iniciativas sociais e conectando voluntários, doadores e projetos.</p>
+            <!-- Imagem: Baixar de Unsplash (ex.: trabalho social), otimizar, salvar como ong.jpg, ~100KB, 400px largura -->
+            <img src="assets/img/ong.jpg" alt="Equipe da ONG em atividade social" width="400" loading="lazy">
+        </section>
+        <section aria-labelledby="missao-title" id="missao" class="institucional">
+            <h2 id="missao-title">Missão</h2>
+            <p>Promover ações de inclusão social por meio de projetos educacionais e culturais.</p>
+        </section>
+        <section aria-labelledby="projetos-destaque" class="projetos-destaque">
+            <h2 id="projetos-destaque">Projetos em Destaque</h2>
+            <ul class="grid" role="list">
+                <li>
+                    <article class="card">
+                        <!-- Imagem: Baixar de Unsplash (ex.: crianças estudando), otimizar, salvar como projeto1.jpg, ~80KB, 300px largura -->
+                        <img src="assets/img/projeto1.jpg" alt="Oficinas de leitura" width="300" loading="lazy">
+                        <h3>Oficinas de Leitura</h3>
+                        <p>Descrição curta do projeto e impacto.</p>
+                        <a href="projetos.html#proj-1" class="cta">Saiba mais</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <!-- Imagem: Baixar de Unsplash (ex.: kits escolares), otimizar, salvar como projeto2.jpg, ~80KB, 300px largura -->
+                        <img src="assets/img/projeto2.jpg" alt="Materiais para estudantes" width="300" loading="lazy">
+                        <h3>Materiais para Estudantes</h3>
+                        <p>Doações de livros e kits escolares.</p>
+                        <a href="projetos.html#proj-2" class="cta">Saiba mais</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <!-- Imagem: Baixar de Unsplash (ex.: ajuda humanitária), otimizar, salvar como projeto3.jpg, ~80KB, 300px largura -->
+                        <img src="assets/img/projeto3.jpg" alt="Fundo de emergência" width="300" loading="lazy">
+                        <h3>Fundo de Emergência</h3>
+                        <p>Atendimento emergencial para famílias em risco.</p>
+                        <a href="projetos.html#proj-3" class="cta">Saiba mais</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="contato" class="contato" aria-labelledby="contato-title">
+            <h2 id="contato-title">Contato</h2>
+            <p>Email: <a href="mailto:contato@passadoresdesemestres.org">contato@passadoresdesemestres.org</a></p>
+            <p>Telefone: (61) 99999-9999</p>
+            <!-- Imagem: Baixar de Unsplash (ex.: mapa ou fachada), otimizar, salvar como contato.jpg, ~100KB, 400px largura -->
+            <img src="assets/img/contato.jpg" alt="Localização da sede da ONG" width="400" loading="lazy">
+        </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="ano"></span> Passadores de Semestres</p>
+        </div>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>

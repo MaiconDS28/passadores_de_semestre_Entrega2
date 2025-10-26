@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Captação de recursos — Passadores de Semestres. Campanhas, doações e transparência.">
+    <meta name="keywords" content="doações, arrecadação, Pix, campanhas">
+    <title>Captação — Passadores de Semestres</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="theme-dark">
+    <a class="skip-link" href="#main">Ir para conteúdo</a>
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Passadores de Semestres — voltar à home">Passadores de Semestres</a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+            <nav id="main-nav" aria-label="Navegação principal" class="nav-hidden">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-submenu">
+                        <a href="projetos.html">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="#missao">Missão</a></li>
+                            <li><a href="#equipe">Equipe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="capitacao.html" aria-current="page">Captação</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="container" role="main">
+        <section class="hero" aria-labelledby="cap-title">
+            <h1 id="cap-title">Captação de Recursos</h1>
+            <p class="lead">Ajude a transformar vidas. Escolha uma campanha, doe pelo Pix ou simule uma doação por cartão.</p>
+            <!-- Imagem: Baixar de Unsplash (ex.: doação), otimizar, salvar como doacao.jpg, ~100KB, 400px largura -->
+            <img src="assets/img/doacao.jpg" alt="Ilustração de apoio às doações" width="400" loading="lazy">
+        </section>
+        <section aria-labelledby="campanhas-title" class="campanhas">
+            <h2 id="campanhas-title">Campanhas em Destaque</h2>
+            <ul class="grid campaign-list" role="list">
+                <li class="campaign-card card" data-id="1" data-meta="5000" data-raised="2150">
+                    <!-- Imagem: Baixar de Unsplash (ex.: crianças estudando), otimizar, salvar como projeto1.jpg, ~80KB, 300px largura -->
+                    <img src="assets/img/projeto1.jpg" alt="Campanha Arrecadação 2025" width="300" loading="lazy">
+                    <div class="card-body">
+                        <h3>Arrecadação 2025</h3>
+                        <p>Recursos para manter oficinas educativas e suporte escolar.</p>
+                        <div class="meta">
+                            <div class="amounts">
+                                <span class="raised">R$ <span class="valor-raised">2.150,00</span></span>
+                                <span class="meta-total">Meta R$ <span class="valor-meta">5.000,00</span></span>
+                            </div>
+                            <progress value="43" max="100" aria-label="Progresso de arrecadação: 43%"></progress>
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-primary btn-doar" data-campaign="1" aria-label="Doar para Arrecadação 2025">Doar</button>
+                            <a href="#relatorios" class="btn btn-ghost">Ver Prestação de Contas</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="campaign-card card" data-id="2" data-meta="8000" data-raised="5200">
+                    <!-- Imagem: Baixar de Unsplash (ex.: kits escolares), otimizar, salvar como projeto2.jpg, ~80KB, 300px largura -->
+                    <img src="assets/img/projeto2.jpg" alt="Campanha Materiais para Estudantes" width="300" loading="lazy">
+                    <div class="card-body">
+                        <h3>Materiais para Estudantes</h3>
+                        <p>Compra de livros, cadernos e kits escolares.</p>
+                        <div class="meta">
+                            <div class="amounts">
+                                <span class="raised">R$ <span class="valor-raised">5.200,00</span></span>
+                                <span class="meta-total">Meta R$ <span class="valor-meta">8.000,00</span></span>
+                            </div>
+                            <progress value="65" max="100" aria-label="Progresso de arrecadação: 65%"></progress>
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-primary btn-doar" data-campaign="2" aria-label="Doar para Materiais para Estudantes">Doar</button>
+                            <a href="#relatorios" class="btn btn-ghost">Ver Prestação de Contas</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section aria-labelledby="relatorios-title" id="relatorios">
+            <h2 id="relatorios-title">Relatórios de Prestação de Contas</h2>
+            <p>Transparência é nosso compromisso. Veja como usamos os recursos.</p>
+            <ul role="list">
+                <li><a href="#" aria-label="Relatório de 2024">Relatório 2024</a></li>
+                <li><a href="#" aria-label="Relatório de 2023">Relatório 2023</a></li>
+            </ul>
+        </section>
+    </main>
+    <div id="donationModal" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()" aria-label="Fechar modal">&times;</span>
+            <h2 id="modalTitle">Formulário de Doação</h2>
+            <form id="donationForm" novalidate>
+                <label for="nomeDoador">Nome<span aria-hidden="true">*</span></label>
+                <input type="text" id="nomeDoador" name="nomeDoador" required aria-required="true" autocomplete="name">
+                <label for="emailDoador">E-mail<span aria-hidden="true">*</span></label>
+                <input type="email" id="emailDoador" name="emailDoador" required aria-required="true" autocomplete="email">
+                <label for="valor">Valor da Doação (R$)<span aria-hidden="true">*</span></label>
+                <input type="number" id="valor" name="valor" required aria-required="true" min="1" step="0.01" autocomplete="off">
+                <h3>Ou doe via Pix</h3>
+                <p>Chave Pix: <span id="pixKey">8c651631-ea65-4aa8-ad11-88113d6b60c5</span></p>
+                <button type="button" onclick="copyPix()" class="btn btn-primary" aria-label="Copiar chave Pix">Copiar Chave Pix</button>
+                <p></p>
+                <button type="submit" class="btn btn-primary">Confirmar Doação</button>
+            </form>
+        </div>
+    </div>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="ano"></span> Passadores de Semestres</p>
+        </div>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
