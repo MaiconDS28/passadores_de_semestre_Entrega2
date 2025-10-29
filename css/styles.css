@@ -1,9 +1,9 @@
 /* Design System */
 :root {
-    /* Paleta de Cores (mínimo 8) */
-    --primary: #1e73be; /* Primária */
+    /* Paleta de Cores*/
+    --primary: #1e73be;
     --primary-dark: #0d4a8a;
-    --secondary: #2dd4bf; /* Secundária */
+    --secondary: #2dd4bf; 
     --secondary-dark: #1aa89a;
     --accent: #10b981;
     --neutral-light: #f4f4f5;
@@ -15,14 +15,14 @@
     --success: #22c55e;
     
 
-    /* Tipografia Hierárquica (mínimo 5 tamanhos) */
-    --font-size-xs: 0.75rem; /* 12px */
-    --font-size-sm: 0.875rem; /* 14px */
-    --font-size-base: 1rem; /* 16px */
-    --font-size-lg: 1.25rem; /* 20px */
-    --font-size-xl: 1.5rem; /* 24px */
-    --font-size-2xl: 2rem; /* 32px */
-    --font-size-3xl: 2.5rem; /* 40px */
+    /* Tipografia Hierárquica*/
+    --font-size-xs: 0.75rem; 
+    --font-size-sm: 0.875rem; 
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem; 
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 2.5rem; 
 
     /* Espaçamento Modular */
     --space-1: 8px;
@@ -74,7 +74,7 @@ body {
     color: var(--bg);
 }
 
-/* Grid System Customizado (12 colunas) */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -88,7 +88,7 @@ body {
 .col-span-6 { grid-column: span 6; }
 .col-span-12 { grid-column: span 12; }
 
-/* Breakpoints Responsivos (mínimo 5) */
+
 @media (max-width: 480px) { /* xs */
     .grid { grid-template-columns: repeat(1, 1fr); }
 }
